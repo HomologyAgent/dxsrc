@@ -1,0 +1,55 @@
+{
+  "name": "DXPlay · 直播",
+  "sites": [
+    {
+      "key": "哔哩直播",
+      "name": "哔哩 • 直播",
+      "type": 3,
+      "api": "./plugins/catalog/bili-live.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "斗鱼直播",
+      "name": "斗鱼 • 直播",
+      "type": 3,
+      "api": "./plugins/catalog/douyu-live.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "虎牙直播",
+      "name": "虎牙 • 直播",
+      "type": 3,
+      "api": "./plugins/catalog/huya-live.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "快手直播",
+      "name": "快手 • 直播",
+      "type": 3,
+      "api": "./plugins/catalog/kuaishou-live.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "网易cc直播",
+      "name": "网易CC • 直播",
+      "type": 3,
+      "api": "./plugins/catalog/netease-cc-live.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    }
+  ]
+}

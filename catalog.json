@@ -1,0 +1,5049 @@
+{
+  "schemaVersion": 1,
+  "categories": [
+    {
+      "id": "film-series",
+      "name": "影视剧",
+      "description": "电影、电视剧与综合点播"
+    },
+    {
+      "id": "animation",
+      "name": "动漫",
+      "description": "动画、番剧与国漫"
+    },
+    {
+      "id": "short-drama",
+      "name": "短剧",
+      "description": "竖屏与横屏短剧"
+    },
+    {
+      "id": "live",
+      "name": "直播",
+      "description": "网络直播目录"
+    },
+    {
+      "id": "drive",
+      "name": "网盘",
+      "description": "网盘索引、分享与搜索"
+    },
+    {
+      "id": "music-audio",
+      "name": "音乐音频",
+      "description": "音乐、听书、FM、DJ与戏曲"
+    },
+    {
+      "id": "sports",
+      "name": "体育",
+      "description": "体育直播与赛事内容"
+    },
+    {
+      "id": "education",
+      "name": "教育儿童",
+      "description": "课堂、知识、儿童与健康内容"
+    },
+    {
+      "id": "adult",
+      "name": "成人内容",
+      "description": "独立分类，默认不加入生成配置",
+      "explicit": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "1905",
+      "name": "1905 • 影视",
+      "plugin": "plugins/catalog/web1905.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "1905"
+        }
+      ]
+    },
+    {
+      "id": "88看球",
+      "name": "88 • 看球",
+      "plugin": "plugins/catalog/sports-88.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "sports"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "88看球"
+        }
+      ]
+    },
+    {
+      "id": "爱看机器人",
+      "name": "爱看 • 影视",
+      "plugin": "plugins/catalog/ikanbot.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "爱看机器人"
+        }
+      ]
+    },
+    {
+      "id": "百酷",
+      "name": "百酷 • 搜索",
+      "plugin": "plugins/catalog/pan-search.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "kind": "baiku"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "百酷"
+        }
+      ]
+    },
+    {
+      "id": "半日99",
+      "name": "半日 • APP",
+      "plugin": "plugins/catalog/app99.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "buildNumber": "2001",
+        "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC",
+        "host": "http://103.217.190.91:19987/app/bn",
+        "name": "半日闲",
+        "package": "com.yf.lelian",
+        "versionName": "3.5.8"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "半日99"
+        }
+      ]
+    },
+    {
+      "id": "贝乐虎",
+      "name": "贝乐虎 • 儿童",
+      "plugin": "plugins/catalog/beilehu.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "贝乐虎"
+        }
+      ]
+    },
+    {
+      "id": "哔哩哔哩听书",
+      "name": "哔哩 • 听书",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "n": "哔哩听书"
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "哔哩哔哩听书"
+        }
+      ]
+    },
+    {
+      "id": "哔哩哔哩戏曲",
+      "name": "哔哩 • 戏曲",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "n": "哔哩戏曲"
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "哔哩哔哩戏曲"
+        }
+      ]
+    },
+    {
+      "id": "哔哩哔哩相声",
+      "name": "哔哩 • 相声",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "n": "哔哩相声"
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "哔哩哔哩相声"
+        }
+      ]
+    },
+    {
+      "id": "哔哩哔哩小品",
+      "name": "哔哩 • 小品",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "n": "哔哩小品"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "哔哩哔哩小品"
+        }
+      ]
+    },
+    {
+      "id": "哔哩哔哩音乐",
+      "name": "哔哩 • 音乐",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "n": "哔哩音乐"
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "哔哩哔哩音乐"
+        }
+      ]
+    },
+    {
+      "id": "哔哩合集",
+      "name": "哔哩 • 合集",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "n": "哔哩合集"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "哔哩合集"
+        },
+        {
+          "collection": "cluntop",
+          "key": "cluntop-bili"
+        }
+      ]
+    },
+    {
+      "id": "哔哩视频",
+      "name": "哔哩 • 影视",
+      "plugin": "plugins/catalog/biliys.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "哔哩视频"
+        }
+      ]
+    },
+    {
+      "id": "哔哩直播",
+      "name": "哔哩 • 直播",
+      "plugin": "plugins/catalog/bili-live.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "live"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "哔哩直播"
+        }
+      ]
+    },
+    {
+      "id": "博看听书",
+      "name": "博看 • 听书",
+      "plugin": "plugins/catalog/ting-bokan.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "博看听书"
+        }
+      ]
+    },
+    {
+      "id": "厂长影视",
+      "name": "厂长 • 影视",
+      "plugin": "plugins/catalog/czsapp.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": "https://cz01.vip",
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "厂长影视"
+        }
+      ]
+    },
+    {
+      "id": "初中课堂",
+      "name": "初中 • 课堂",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "json": "https://raw.githubusercontent.com/qist/tvbox/58012fed358e5e54d24429551222f7d32ca49488/json/CZKT.json"
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "初中课堂"
+        }
+      ]
+    },
+    {
+      "id": "斗鱼直播",
+      "name": "斗鱼 • 直播",
+      "plugin": "plugins/catalog/douyu-live.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "live"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "斗鱼直播"
+        }
+      ]
+    },
+    {
+      "id": "独播影视",
+      "name": "独播 • 影视",
+      "plugin": "plugins/catalog/duboku.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "独播影视"
+        },
+        {
+          "collection": "xptv",
+          "key": "xptv-duboku"
+        }
+      ]
+    },
+    {
+      "id": "多多",
+      "name": "多多 • 4K",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "https://tv.yydsys.top",
+          "https://tv.yydsys.cc",
+          "https://tv.214521.xyz"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "多多"
+        }
+      ]
+    },
+    {
+      "id": "二小",
+      "name": "二小 • 4K",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "http://www.wexwp.cc",
+          "https://www.wexwp.cc"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "二小"
+        }
+      ]
+    },
+    {
+      "id": "番社动漫",
+      "name": "番社 • 动漫",
+      "plugin": "plugins/catalog/dora-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "番社动漫"
+        }
+      ]
+    },
+    {
+      "id": "方舟动漫",
+      "name": "方舟 • 动漫",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "e72cdfd629e8895d",
+        "dataKey": "e72cdfd629e8895d",
+        "url": "https://www.cyfz.top"
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "方舟动漫"
+        }
+      ]
+    },
+    {
+      "id": "飞娱影视",
+      "name": "飞娱 • 影视",
+      "plugin": "plugins/catalog/feiyu.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "resolver",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "飞娱影视"
+        }
+      ]
+    },
+    {
+      "id": "高中课堂",
+      "name": "高中 • 课堂",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "json": "https://raw.githubusercontent.com/qist/tvbox/58012fed358e5e54d24429551222f7d32ca49488/json/GZKT.json"
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "高中课堂"
+        }
+      ]
+    },
+    {
+      "id": "咕咕动漫",
+      "name": "咕咕 • 动漫",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "nKfZ8KX6JTNWRzTD",
+        "dataKey": "nKfZ8KX6JTNWRzTD",
+        "url": "https://www.gugu3.com"
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "咕咕动漫"
+        }
+      ]
+    },
+    {
+      "id": "瓜子体育",
+      "name": "瓜子 • 体育",
+      "plugin": "plugins/catalog/sports-guazi.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "sports"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "瓜子体育"
+        }
+      ]
+    },
+    {
+      "id": "瓜子影视",
+      "name": "瓜子 • 影视",
+      "plugin": "plugins/catalog/gz360.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "瓜子影视"
+        }
+      ]
+    },
+    {
+      "id": "鬼鬼",
+      "name": "鬼鬼 • 搜索",
+      "plugin": "plugins/catalog/pan-search.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "kind": "guigui"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "鬼鬼"
+        }
+      ]
+    },
+    {
+      "id": "果果短剧",
+      "name": "果果 • 短剧",
+      "plugin": "plugins/catalog/guoguo-short.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "short-drama"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "果果短剧"
+        }
+      ]
+    },
+    {
+      "id": "韩圈",
+      "name": "韩圈 • APP",
+      "plugin": "plugins/catalog/hxq.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": "http://www.小不点.com/api/2026/fishhxq.php",
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "韩圈"
+        }
+      ]
+    },
+    {
+      "id": "好看短剧",
+      "name": "好看 • 短剧",
+      "plugin": "plugins/catalog/short-haokan.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "short-drama"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "好看短剧"
+        }
+      ]
+    },
+    {
+      "id": "河马短剧",
+      "name": "河马 • 短剧",
+      "plugin": "plugins/catalog/short-hema.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "short-drama"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "河马短剧"
+        },
+        {
+          "collection": "xptv",
+          "key": "xptv-hema"
+        }
+      ]
+    },
+    {
+      "id": "虎斑",
+      "name": "虎斑 • 4K",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "http://xhban.xyz",
+          "http://38.76.197.172:16969"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "虎斑"
+        }
+      ]
+    },
+    {
+      "id": "虎牙直播",
+      "name": "虎牙 • 直播",
+      "plugin": "plugins/catalog/huya-live.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "live"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "虎牙直播"
+        },
+        {
+          "collection": "cluntop",
+          "key": "cluntop-huya-live"
+        }
+      ]
+    },
+    {
+      "id": "华数",
+      "name": "华数 • 影视",
+      "plugin": "plugins/catalog/wasu.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "华数"
+        }
+      ]
+    },
+    {
+      "id": "华谊",
+      "name": "华谊 • APP",
+      "plugin": "plugins/catalog/app-drama.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "appName": "华谊",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "dataKey": "NDBYSZR1DMRRZ05NSUCWEJNIYWLBPT0=",
+        "decrypt": "1",
+        "host": "",
+        "pkg": "com.muyue.tool",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp9Ek4wIlQAtwFnuBRlsFiow2tr+4UOciGeNKbY7nL74etUqUb6fvpOSOHhFEfaWlfwUpOB17x3JEL3No19nfjCeVYrYPjlJcgoqUWH/tfIfFAQWvtxBIBlKazkhw8d3ChysWmeWRikKqkBsVRY4oqNPuj4sjm6Zult0U4I4prRQIDAQAB",
+        "site": "https://vip.123pan.cn/1851089669/oss/az5.txt",
+        "version": "1.0.0.4"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "华谊"
+        }
+      ]
+    },
+    {
+      "id": "华谊影视",
+      "name": "华谊 • 影视",
+      "plugin": "plugins/catalog/app-drama.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "华谊影视"
+        }
+      ]
+    },
+    {
+      "id": "怀桑",
+      "name": "怀桑 • APP",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "kj37zs29q22jk96t",
+        "dataKey": "kj37zs29q22jk96t",
+        "init": "initV122",
+        "ua": "okhttp/3.10.0",
+        "url": "http://110.42.67.130:1226"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "怀桑"
+        }
+      ]
+    },
+    {
+      "id": "即刻",
+      "name": "即刻 • 网盘",
+      "plugin": "plugins/catalog/jike.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "即刻"
+        }
+      ]
+    },
+    {
+      "id": "急救教学",
+      "name": "急救 • 教学",
+      "plugin": "plugins/catalog/first-aid.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "急救教学"
+        },
+        {
+          "collection": "cluntop",
+          "key": "cluntop-first-aid"
+        }
+      ]
+    },
+    {
+      "id": "荐片",
+      "name": "荐片 • 影视",
+      "plugin": "plugins/catalog/jianpian.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "荐片"
+        },
+        {
+          "collection": "cluntop",
+          "key": "cluntop-jianpian"
+        },
+        {
+          "collection": "xptv",
+          "key": "xptv-jianpian"
+        }
+      ]
+    },
+    {
+      "id": "金牌影视",
+      "name": "金牌 • 影视",
+      "plugin": "plugins/catalog/jpys.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": "https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn",
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "金牌影视"
+        }
+      ]
+    },
+    {
+      "id": "堇夏听书",
+      "name": "堇夏 • 听书",
+      "plugin": "plugins/catalog/ting-jinxia.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "堇夏听书"
+        }
+      ]
+    },
+    {
+      "id": "橘汁",
+      "name": "橘汁 • APP",
+      "plugin": "plugins/catalog/app-drama.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "appName": "橘汁",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "dataKey": "OW1WBLFZCLJ0WTNJCDMYEGXWYVP3PT0=",
+        "decrypt": "1",
+        "host": "",
+        "pkg": "com.mxj.wylcjbxyx",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
+        "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
+        "version": "3.0.2.3"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "橘汁"
+        }
+      ]
+    },
+    {
+      "id": "剧圈99",
+      "name": "剧圈 • APP",
+      "plugin": "plugins/catalog/app99.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "buildNumber": "2002",
+        "buildSignature": "054FA8DDA4319C6B6A9B954CA5777541C993F00B1B0BD4394F7EDE48184C4594",
+        "host": "http://124.221.3.182:19987/app/bn",
+        "name": "剧圈圈",
+        "package": "com.qingtangxiaozhuan.xyz",
+        "versionName": "1.2.0"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "剧圈99"
+        }
+      ]
+    },
+    {
+      "id": "聚合",
+      "name": "聚合 • 搜索",
+      "plugin": "plugins/catalog/pan-search.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "kind": "juhe"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "聚合"
+        }
+      ]
+    },
+    {
+      "id": "咖啡体育",
+      "name": "咖啡 • 体育",
+      "plugin": "plugins/catalog/sports-kafei.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "sports"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "咖啡体育"
+        }
+      ]
+    },
+    {
+      "id": "酷乐",
+      "name": "酷乐 • 搜索",
+      "plugin": "plugins/catalog/pan-search.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "kind": "kule"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "酷乐"
+        }
+      ]
+    },
+    {
+      "id": "酷我音乐",
+      "name": "酷我 • 音乐",
+      "plugin": "plugins/catalog/kuwo-music.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "酷我音乐"
+        }
+      ]
+    },
+    {
+      "id": "快手直播",
+      "name": "快手 • 直播",
+      "plugin": "plugins/catalog/kuaishou-live.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "live"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "快手直播"
+        }
+      ]
+    },
+    {
+      "id": "快映",
+      "name": "快映 • 4K",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "http://xsayang.fun",
+          "http://38.76.197.172:12521"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "快映"
+        }
+      ]
+    },
+    {
+      "id": "蜡笔",
+      "name": "蜡笔 • 4K",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "http://tvpanpan.site",
+          "http://feimo.fun",
+          "https://www.mmpanpan.site"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "蜡笔"
+        }
+      ]
+    },
+    {
+      "id": "蓝鸟",
+      "name": "蓝鸟 • APP",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "oW5UxZ5kWVr1DI69",
+        "dataKey": "oW5UxZ5kWVr1DI69",
+        "init": "initV122",
+        "site": "https://lanyingjisu.oss-cn-wuhan-lr.aliyuncs.com/lyjszx.txt",
+        "ua": "okhttp/3.10.0"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "蓝鸟"
+        }
+      ]
+    },
+    {
+      "id": "蓝鹰",
+      "name": "蓝鹰 • APP",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "hagYExMdMkeWfemK",
+        "dataKey": "hagYExMdMkeWfemK",
+        "init": "initV122",
+        "ua": "okhttp/3.10.0",
+        "url": "http://103.217.190.91:5566"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "蓝鹰"
+        }
+      ]
+    },
+    {
+      "id": "量子资源",
+      "name": "量子 • 影视",
+      "plugin": "plugins/catalog/cms-json.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "api": "https://cj.lziapi.com/api.php/provide/vod/"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "cms"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "量子资源"
+        }
+      ]
+    },
+    {
+      "id": "猎手影视",
+      "name": "猎手 • 影视",
+      "plugin": "plugins/catalog/hunter-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "猎手影视"
+        }
+      ]
+    },
+    {
+      "id": "轮回dj",
+      "name": "轮回 • DJ",
+      "plugin": "plugins/catalog/djlh.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "轮回DJ"
+        }
+      ]
+    },
+    {
+      "id": "马猴影视",
+      "name": "马猴 • 影视",
+      "plugin": "plugins/catalog/mahou-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "马猴影视"
+        }
+      ]
+    },
+    {
+      "id": "曼波动漫",
+      "name": "曼波 • 动漫",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "66dc309cbeeca454",
+        "dataKey": "66dc309cbeeca454",
+        "url": "https://app.omofun1.top"
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "曼波动漫"
+        }
+      ]
+    },
+    {
+      "id": "漫国动漫",
+      "name": "漫国 • 动漫",
+      "plugin": "plugins/catalog/app-sy.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "listKey": "aassddwwxxllsx1x",
+        "parsesKey": "aassddwwxxllsx1x",
+        "siteKey": "rectangleadsadxa",
+        "url": "http://114.66.27.208:806"
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "漫国动漫"
+        }
+      ]
+    },
+    {
+      "id": "米搜",
+      "name": "米搜 • 搜索",
+      "plugin": "plugins/catalog/pan-search.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "kind": "misou",
+        "site": [
+          "http://gesoso.fun",
+          "http://www.misoso.shop"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "米搜"
+        }
+      ]
+    },
+    {
+      "id": "喵呜动漫",
+      "name": "喵呜 • 动漫",
+      "plugin": "plugins/catalog/miaowu-anime.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "喵呜动漫"
+        }
+      ]
+    },
+    {
+      "id": "魔都动漫",
+      "name": "魔都 • 动漫",
+      "plugin": "plugins/catalog/cms-json.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "api": "https://www.mdzyapi.com/api.php/provide/vod",
+        "categories": [
+          [
+            "1",
+            "国产动漫"
+          ],
+          [
+            "2",
+            "日韩动漫"
+          ],
+          [
+            "3",
+            "欧美动漫"
+          ],
+          [
+            "4",
+            "港台动漫"
+          ],
+          [
+            "5",
+            "动漫电影"
+          ]
+        ]
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "cms"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "魔都动漫"
+        }
+      ]
+    },
+    {
+      "id": "魔方",
+      "name": "魔方 • APP",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "1234567887654321",
+        "dataKey": "1234567887654321",
+        "url": "https://www.douy32mf.top"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "魔方"
+        }
+      ]
+    },
+    {
+      "id": "茉莉",
+      "name": "茉莉 • APP",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "88689667dce61725",
+        "dataKey": "88689667dce61725",
+        "site": "https://allinadmin.oss-cn-hangzhou.aliyuncs.com/bk/9.txt"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "茉莉"
+        }
+      ]
+    },
+    {
+      "id": "木偶",
+      "name": "木偶 • 4K",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "https://123.666291.xyz",
+          "https://666.666291.xyz"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "木偶"
+        }
+      ]
+    },
+    {
+      "id": "欧哥",
+      "name": "欧哥 • 4K",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "https://woog.nxog.eu.org",
+          "https://woog.nxog.fun",
+          "https://woog.430520.xyz"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "欧哥"
+        }
+      ]
+    },
+    {
+      "id": "盘搜",
+      "name": "盘搜 • 搜索",
+      "plugin": "plugins/catalog/pan-search.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "kind": "pansou"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "盘搜"
+        }
+      ]
+    },
+    {
+      "id": "苹果",
+      "name": "苹果 • APP",
+      "plugin": "plugins/catalog/app-drama.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "appName": "小苹果",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "dataKey": "S0VNDTJHOFHHCNMRAW5IV2TOS2PBPQ==",
+        "decrypt": "0",
+        "host": "",
+        "pkg": "com.juechufsh.android.xpg1",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
+        "site": "https://xpgandroid03-1372779881.cos.ap-beijing.myqcloud.com/app_xpg_android.txt",
+        "version": "1.0.0.3"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "苹果"
+        }
+      ]
+    },
+    {
+      "id": "七猫短剧",
+      "name": "七猫 • 短剧",
+      "plugin": "plugins/catalog/qimao-short.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "short-drama"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "七猫短剧"
+        }
+      ]
+    },
+    {
+      "id": "奇奇",
+      "name": "奇奇 • APP",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "FTgP4Gq8zPiqbt7M",
+        "dataKey": "FTgP4Gq8zPiqbt7M",
+        "init": "initV122",
+        "search": "searchList8",
+        "site": "https://yun-1316442804.cos.ap-guangzhou.myqcloud.com/603.txt",
+        "ua": "okhttp/3.10.0"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "奇奇"
+        }
+      ]
+    },
+    {
+      "id": "汽水音乐",
+      "name": "汽水 • 音乐",
+      "plugin": "plugins/catalog/qishui-music.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "汽水音乐"
+        }
+      ]
+    },
+    {
+      "id": "蜻蜓fm",
+      "name": "蜻蜓 • FM",
+      "plugin": "plugins/catalog/qingting-fm.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "蜻蜓FM"
+        }
+      ]
+    },
+    {
+      "id": "趣盘",
+      "name": "趣盘 • 搜索",
+      "plugin": "plugins/catalog/pan-search.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "kind": "qupan"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "趣盘"
+        },
+        {
+          "collection": "cluntop",
+          "key": "cluntop-funletu"
+        }
+      ]
+    },
+    {
+      "id": "热播影视",
+      "name": "热播 • APP",
+      "plugin": "plugins/catalog/app-rj.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "url": "http://v.rbotv.cn"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "热播影视"
+        }
+      ]
+    },
+    {
+      "id": "人人",
+      "name": "人人 • 网盘",
+      "plugin": "plugins/catalog/renren.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "人人"
+        }
+      ]
+    },
+    {
+      "id": "闪电",
+      "name": "闪电 • 4K",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "http://shandian.blog"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "闪电"
+        }
+      ]
+    },
+    {
+      "id": "少儿教育",
+      "name": "少儿 • 教育",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "json": "https://raw.githubusercontent.com/qist/tvbox/58012fed358e5e54d24429551222f7d32ca49488/json/SEJY.json"
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "少儿教育"
+        }
+      ]
+    },
+    {
+      "id": "世界",
+      "name": "世界 • APP",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "O3K6rYx75Q4xtiIE",
+        "dataKey": "O3K6rYx75Q4xtiIE",
+        "url": "https://appcms.4ksj.app"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "世界"
+        }
+      ]
+    },
+    {
+      "id": "世界听书",
+      "name": "世界 • 听书",
+      "plugin": "plugins/catalog/ting-shijie.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "世界听书"
+        }
+      ]
+    },
+    {
+      "id": "双星",
+      "name": "双星 • 4K",
+      "plugin": "plugins/catalog/shuang-xing.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "双星"
+        },
+        {
+          "collection": "xptv",
+          "key": "xptv-star2"
+        }
+      ]
+    },
+    {
+      "id": "双星99",
+      "name": "双星 • 动漫",
+      "plugin": "plugins/catalog/app99.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "LoginPath": "/app/log",
+        "buildNumber": "2001",
+        "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC",
+        "host": "http://111.180.139.119:19987/app/bn",
+        "name": "双子星动漫",
+        "package": "com.haiwang.liangxia.my.ym",
+        "versionName": "6.4.9"
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "双星99"
+        }
+      ]
+    },
+    {
+      "id": "天堂",
+      "name": "天堂 • APP",
+      "plugin": "plugins/catalog/app-drama.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "appName": "电影天堂",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "dataKey": "D2KREWRIBVNAUJJYEDL4VFHOY2Q0PQ==",
+        "decrypt": "0",
+        "host": "",
+        "pkg": "com.dytiantang.one",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
+        "site": "https://dyttandroid04-1372779881.cos.ap-shanghai.myqcloud.com/app_dyttandroid.txt",
+        "version": "3.0.0.7"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "天堂"
+        }
+      ]
+    },
+    {
+      "id": "童趣",
+      "name": "童趣 • 儿童",
+      "plugin": "plugins/catalog/tong-qu.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "童趣"
+        }
+      ]
+    },
+    {
+      "id": "兔小贝",
+      "name": "兔小贝 • 儿童",
+      "plugin": "plugins/catalog/tuxiaobei.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "兔小贝"
+        }
+      ]
+    },
+    {
+      "id": "玩偶",
+      "name": "玩偶 • 4K",
+      "plugin": "plugins/catalog/wogg.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "https://www.wogg.live",
+          "https://woggpan.888484.xyz",
+          "https://wogg.xxooo.cf",
+          "https://woggpan.xxooo.cf"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "玩偶"
+        }
+      ]
+    },
+    {
+      "id": "王子",
+      "name": "王子 • APP",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "dataIv": "5a9w6x58dsq6z3a6",
+        "dataKey": "5a9w6x58dsq6z3a6",
+        "url": "https://app.95112475.xyz"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "王子"
+        }
+      ]
+    },
+    {
+      "id": "网易cc直播",
+      "name": "网易CC • 直播",
+      "plugin": "plugins/catalog/netease-cc-live.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "live"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "网易CC直播"
+        }
+      ]
+    },
+    {
+      "id": "围观短剧",
+      "name": "围观 • 短剧",
+      "plugin": "plugins/catalog/short-weiguan.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "short-drama"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "围观短剧"
+        }
+      ]
+    },
+    {
+      "id": "戏曲多多",
+      "name": "戏曲 • 多多",
+      "plugin": "plugins/catalog/app-ly.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "戏曲多多"
+        }
+      ]
+    },
+    {
+      "id": "小学课堂",
+      "name": "小学 • 课堂",
+      "plugin": "plugins/catalog/bili.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "json": "https://raw.githubusercontent.com/qist/tvbox/58012fed358e5e54d24429551222f7d32ca49488/json/XXKT.json"
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "小学课堂"
+        }
+      ]
+    },
+    {
+      "id": "小镇影视",
+      "name": "小镇 • 影视",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "town"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "小镇影视"
+        },
+        {
+          "collection": "cluntop",
+          "key": "cluntop-town-video"
+        }
+      ]
+    },
+    {
+      "id": "星芽短剧",
+      "name": "星芽 • 短剧",
+      "plugin": "plugins/catalog/short-xingya.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "short-drama"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "星芽短剧"
+        },
+        {
+          "collection": "xptv",
+          "key": "xptv-xingya"
+        }
+      ]
+    },
+    {
+      "id": "养生堂",
+      "name": "养生 • 知识",
+      "plugin": "plugins/catalog/yst.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "养生堂"
+        }
+      ]
+    },
+    {
+      "id": "一起影视",
+      "name": "一起 • APP",
+      "plugin": "plugins/catalog/app-yqk.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "一起影视"
+        }
+      ]
+    },
+    {
+      "id": "移动",
+      "name": "移动 • 4K",
+      "plugin": "plugins/catalog/yidong4k.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "移动"
+        }
+      ]
+    },
+    {
+      "id": "永乐影视",
+      "name": "永乐 • 影视",
+      "plugin": "plugins/catalog/module-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "yongle"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "永乐影视"
+        }
+      ]
+    },
+    {
+      "id": "呦呦dj",
+      "name": "呦呦 • DJ",
+      "plugin": "plugins/catalog/djuu.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "呦呦DJ"
+        }
+      ]
+    },
+    {
+      "id": "预告",
+      "name": "新片 • 预告",
+      "plugin": "plugins/catalog/ygp.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "预告"
+        }
+      ]
+    },
+    {
+      "id": "指南",
+      "name": "指南 • 4K",
+      "plugin": "plugins/catalog/4k-guide.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "education"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "指南"
+        },
+        {
+          "collection": "cluntop",
+          "key": "cluntop-four-k-guide"
+        }
+      ]
+    },
+    {
+      "id": "至臻",
+      "name": "至臻 • 4K",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "https://sp.zzzy.shop",
+          "https://www.zhizhen8.click",
+          "https://www.zhizhen1.top"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "至臻"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-115-share",
+      "name": "115分享",
+      "plugin": "plugins/catalog/public-share-list.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "listUrl": "https://raw.githubusercontent.com/cluntop/tvbox/ddffe6fdee088edd22185c05b8594210fcbcdca3/lib/115share.txt",
+        "name": "115分享",
+        "provider": "115"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-115-share"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-aigua-video",
+      "name": "爱瓜TV",
+      "plugin": "plugins/catalog/aigua-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-aigua-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-ali-ebook-share",
+      "name": "阿里图书",
+      "plugin": "plugins/catalog/public-share-list.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "listUrl": "https://raw.githubusercontent.com/cluntop/tvbox/ddffe6fdee088edd22185c05b8594210fcbcdca3/lib/alishare.ebook.txt",
+        "name": "阿里图书",
+        "provider": "ali"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-ali-ebook-share"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-ali-share",
+      "name": "阿里分享",
+      "plugin": "plugins/catalog/public-share-list.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "listUrl": "https://raw.githubusercontent.com/cluntop/tvbox/ddffe6fdee088edd22185c05b8594210fcbcdca3/lib/alishare.txt",
+        "name": "阿里分享",
+        "provider": "ali"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-ali-share"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-apple-video",
+      "name": "Apple影视",
+      "plugin": "plugins/catalog/apple-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-apple-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-bubu-video",
+      "name": "布布追剧",
+      "plugin": "plugins/catalog/bubu-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-bubu-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-cms-collection",
+      "name": "采集全集",
+      "plugin": "plugins/catalog/cms-collection.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "configUrl": "https://raw.githubusercontent.com/cluntop/tvbox/ddffe6fdee088edd22185c05b8594210fcbcdca3/lib/cj.json",
+        "primary": 1,
+        "searchSites": 4
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "cms"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-cms-collection"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-cocoa-video",
+      "name": "可可影视",
+      "plugin": "plugins/catalog/cocoa-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-cocoa-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-dapanso",
+      "name": "大盘搜",
+      "plugin": "plugins/catalog/pan-search.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "kind": "dapanso"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-dapanso"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-ddmf-video",
+      "name": "蛋蛋魔法影视",
+      "plugin": "plugins/catalog/module-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "ddmf"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-ddmf-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-dmmiku",
+      "name": "动漫MIKU",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "baseUrl": "https://www.dmmiku.com",
+        "preset": "dmmiku"
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-dmmiku"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-duoduo-web-player",
+      "name": "多多影视",
+      "plugin": "plugins/catalog/web-player.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "duoduo"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-duoduo-web-player"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-faloo-audio",
+      "name": "听书达人",
+      "plugin": "plugins/catalog/faloo-audio.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-faloo-audio"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-fantuan-video",
+      "name": "饭团影视",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "fantuan"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-fantuan-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-feikuai-video",
+      "name": "飞快影视",
+      "plugin": "plugins/catalog/module-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "feikuai"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-feikuai-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-gaoqing-shares",
+      "name": "高清电影",
+      "plugin": "plugins/catalog/public-download-shares.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "base": "https://www.gaoqing888.com",
+        "preset": "gaoqing"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-gaoqing-shares"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-gd-music",
+      "name": "捡的音乐",
+      "plugin": "plugins/catalog/gd-music.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "configUrl": "https://raw.githubusercontent.com/cluntop/tvbox/ddffe6fdee088edd22185c05b8594210fcbcdca3/lib/jdyy.json",
+        "source": "netease"
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-gd-music"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-gold-mw",
+      "name": "金牌影院",
+      "plugin": "plugins/catalog/app-mw.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "sites": [
+          "https://www.sdzhgt.com",
+          "https://m.sdzhgt.com"
+        ]
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-gold-mw"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-guangya-community",
+      "name": "光鸭社区",
+      "plugin": "plugins/catalog/guangya-community.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-guangya-community"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-guazi-video",
+      "name": "瓜子影视",
+      "plugin": "plugins/catalog/gz360.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "sites": [
+          "https://apinew.uozvr.com",
+          "https://api.w32z7vtd.com",
+          "https://api.6a7nnf7.com",
+          "https://api.umygrx3.com",
+          "https://api.rmedphk.com"
+        ]
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-guazi-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-hanju-video",
+      "name": "新韩剧网",
+      "plugin": "plugins/catalog/hanju-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-hanju-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-heaven-video",
+      "name": "影视天堂",
+      "plugin": "plugins/catalog/heaven-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-heaven-video"
+        },
+        {
+          "collection": "xptv",
+          "key": "xptv-heaven"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-huangguo-short",
+      "name": "黄果短剧",
+      "plugin": "plugins/catalog/huangguo-short.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "short-drama"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-huangguo-short"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-huavod-video",
+      "name": "华人视频",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "huavod"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-huavod-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-ifuntv-video",
+      "name": "欧乐影视",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "ifuntv"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-ifuntv-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-jieyingshi",
+      "name": "界影视",
+      "plugin": "plugins/catalog/jpys.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": "https://www.hkybqufgh.com",
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-jieyingshi"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-kangaroo-video",
+      "name": "袋鼠影视",
+      "plugin": "plugins/catalog/kangaroo-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-kangaroo-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-kugou-rank",
+      "name": "酷狗榜单",
+      "plugin": "plugins/catalog/kugou-rank.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-kugou-rank"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-libvio-share",
+      "name": "LIBVIO",
+      "plugin": "plugins/catalog/libvio-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-libvio-share"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-meijumi-shares",
+      "name": "美剧迷网盘",
+      "plugin": "plugins/catalog/public-download-shares.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "base": "https://www.meijumi.net",
+        "preset": "meijumi"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-meijumi-shares"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-mifun",
+      "name": "MiFun动漫",
+      "plugin": "plugins/catalog/app-get.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "dataIv": "GETMIFUNGEIMIFUN",
+        "dataKey": "GETMIFUNGEIMIFUN",
+        "deviceId": "4ff30d65365d493aa76ee9171dd34ac4",
+        "signedHeaders": true,
+        "site": "https://miget-1313189639.cos.ap-guangzhou.myqcloud.com/mifun.txt",
+        "version": "516"
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-mifun"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-mogg",
+      "name": "木偶哥哥",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "site": [
+          "http://123.666291.xyz"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-mogg"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-ninety-one-video",
+      "name": "91影视",
+      "plugin": "plugins/catalog/ninety-one-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "adult"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-ninety-one-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-owo-video",
+      "name": "owoav",
+      "plugin": "plugins/catalog/owo-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "adult"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-owo-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-pansearch",
+      "name": "PanSearch",
+      "plugin": "plugins/catalog/pan-search.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "kind": "pansearch"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-pansearch"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-ptt-video",
+      "name": "PTT",
+      "plugin": "plugins/catalog/ptt-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-ptt-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-qiyou-anime",
+      "name": "奇优动漫",
+      "plugin": "plugins/catalog/qiyou-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "baseUrl": "http://qiyoudy5.com"
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-qiyou-anime"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-qiyou-video",
+      "name": "奇优影视",
+      "plugin": "plugins/catalog/qiyou-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-qiyou-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-quark-share",
+      "name": "夸克分享",
+      "plugin": "plugins/catalog/public-share-list.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "listUrl": "https://raw.githubusercontent.com/cluntop/tvbox/ddffe6fdee088edd22185c05b8594210fcbcdca3/lib/quarkshare.txt",
+        "name": "夸克分享",
+        "provider": "quark"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-quark-share"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-qwmp4-shares",
+      "name": "七味网盘",
+      "plugin": "plugins/catalog/public-download-shares.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "base": "https://www.qwmp4.com",
+        "preset": "qwmp4"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-qwmp4-shares"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-roliz-video",
+      "name": "乱伦仓库",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "roliz"
+      },
+      "classification": {
+        "content": [
+          "adult"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-roliz-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-shaofu-video",
+      "name": "少妇喝了",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "shaofu"
+      },
+      "classification": {
+        "content": [
+          "adult"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-shaofu-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-snowfall-video",
+      "name": "雪落影视",
+      "plugin": "plugins/catalog/snowfall-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-snowfall-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-sunshine-video",
+      "name": "阳光影视",
+      "plugin": "plugins/catalog/sunshine-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-sunshine-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-tomato-anime",
+      "name": "番茄动漫",
+      "plugin": "plugins/catalog/tomato-anime.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-tomato-anime"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-wencai-mw",
+      "name": "文才影视",
+      "plugin": "plugins/catalog/app-mw.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "sites": [
+          "https://www.jiabaide.cn",
+          "https://www.sizhengxt.com",
+          "https://0996zp.com",
+          "https://9zhoukj.com",
+          "https://www.tjrongze.com",
+          "https://cqzuoer.com"
+        ]
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-wencai-mw"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-wobg-labi",
+      "name": "蜡笔网盘",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "site": [
+          "https://xiaocgege.shop"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-wobg-labi"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-wogg",
+      "name": "玩偶",
+      "plugin": "plugins/catalog/wogg.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "site": [
+          "http://wogg.888484.xyz",
+          "https://www.wogg.live",
+          "https://woggpan.888484.xyz"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-wogg"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-xb6v-shares",
+      "name": "新6V网盘",
+      "plugin": "plugins/catalog/public-download-shares.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": {
+        "base": "https://www.xb6v.com",
+        "preset": "xb6v"
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-xb6v-shares"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-xigua-video",
+      "name": "西瓜影视",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "xigua"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-xigua-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-xigua51-video",
+      "name": "51吸瓜",
+      "plugin": "plugins/catalog/xigua51-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "adult"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-xigua51-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-xx01-video",
+      "name": "猎奇影视",
+      "plugin": "plugins/catalog/xx01-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "adult"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-xx01-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-yese-video",
+      "name": "夜色",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "yese"
+      },
+      "classification": {
+        "content": [
+          "adult"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-yese-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-yinyuetai",
+      "name": "音悦台",
+      "plugin": "plugins/catalog/yinyuetai.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-yinyuetai"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-youav-video",
+      "name": "Youavhub",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "extension": {
+        "preset": "youav"
+      },
+      "classification": {
+        "content": [
+          "adult"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-youav-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-youtube-video",
+      "name": "YouTube",
+      "plugin": "plugins/catalog/youtube-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-youtube-video"
+        }
+      ]
+    },
+    {
+      "id": "cluntop-yymp3",
+      "name": "YYMP3",
+      "plugin": "plugins/catalog/yymp3.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "music-audio"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "cluntop",
+          "key": "cluntop-yymp3"
+        }
+      ]
+    },
+    {
+      "id": "didahd",
+      "name": "嘀嗒影视",
+      "plugin": "plugins/catalog/didahd.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "resolver",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "Didahd"
+        }
+      ]
+    },
+    {
+      "id": "fyyy",
+      "name": "飞宇影院",
+      "plugin": "plugins/catalog/mac-html.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": false,
+        "quickSearch": false,
+        "filterable": false,
+        "changeable": true
+      },
+      "extension": {
+        "preset": "fyyy"
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "fyyy"
+        }
+      ]
+    },
+    {
+      "id": "olelive",
+      "name": "欧乐影院 • 外",
+      "plugin": "plugins/catalog/olelive.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "OleLive"
+        },
+        {
+          "collection": "xptv",
+          "key": "xptv-olelive"
+        }
+      ]
+    },
+    {
+      "id": "tvb云播",
+      "name": "TVB • 云播",
+      "plugin": "plugins/catalog/tvb-cloud.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": false,
+        "filterable": true,
+        "changeable": false
+      },
+      "extension": "http://app.tuxianimg.com",
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "jsm",
+          "key": "TVB云播"
+        }
+      ]
+    },
+    {
+      "id": "xptv-age",
+      "name": "AGE • 动漫",
+      "plugin": "plugins/catalog/age-anime.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "xptv",
+          "key": "xptv-age"
+        }
+      ]
+    },
+    {
+      "id": "xptv-anime1",
+      "name": "Anime1 • 动漫",
+      "plugin": "plugins/catalog/anime1.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "classification": {
+        "content": [
+          "animation"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "xptv",
+          "key": "xptv-anime1"
+        }
+      ]
+    },
+    {
+      "id": "xptv-jpyy",
+      "name": "金牌 • 影视",
+      "plugin": "plugins/catalog/jpys.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "xptv",
+          "key": "xptv-jpyy"
+        }
+      ]
+    },
+    {
+      "id": "xptv-labi",
+      "name": "蜡笔 • 网盘",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "http://www.labi88.sbs"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "xptv",
+          "key": "xptv-labi"
+        }
+      ]
+    },
+    {
+      "id": "xptv-muou",
+      "name": "木偶 • 网盘",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "http://123.666291.xyz",
+          "https://666.666291.xyz"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "xptv",
+          "key": "xptv-muou"
+        }
+      ]
+    },
+    {
+      "id": "xptv-ouge",
+      "name": "欧哥 • 网盘",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "https://woog.nxog.eu.org",
+          "https://woog.nxog.fun"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "xptv",
+          "key": "xptv-ouge"
+        }
+      ]
+    },
+    {
+      "id": "xptv-ppnix",
+      "name": "PPnix • 影视",
+      "plugin": "plugins/catalog/ppnix-video.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "classification": {
+        "content": [
+          "film-series"
+        ],
+        "delivery": "direct",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "xptv",
+          "key": "xptv-ppnix"
+        }
+      ]
+    },
+    {
+      "id": "xptv-wogg",
+      "name": "玩偶 • 网盘",
+      "plugin": "plugins/catalog/wogg.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "xptv",
+          "key": "xptv-wogg"
+        }
+      ]
+    },
+    {
+      "id": "xptv-yydsys",
+      "name": "多多 • 网盘",
+      "plugin": "plugins/catalog/pan-web-share.js",
+      "type": 3,
+      "capabilities": {
+        "searchable": true,
+        "quickSearch": true,
+        "filterable": true,
+        "changeable": true
+      },
+      "extension": {
+        "site": [
+          "https://tv.yydsys.top",
+          "https://tv.yydsys.cc"
+        ]
+      },
+      "classification": {
+        "content": [
+          "drive"
+        ],
+        "delivery": "drive-share",
+        "implementation": "native"
+      },
+      "health": "verified",
+      "origins": [
+        {
+          "collection": "xptv",
+          "key": "xptv-yydsys"
+        }
+      ]
+    }
+  ]
+}

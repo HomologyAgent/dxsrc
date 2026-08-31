@@ -1,0 +1,841 @@
+{
+  "name": "DXPlay · 影视剧",
+  "sites": [
+    {
+      "key": "1905",
+      "name": "1905 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/web1905.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "爱看机器人",
+      "name": "爱看 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/ikanbot.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "半日99",
+      "name": "半日 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app99.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "buildNumber": "2001",
+        "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC",
+        "host": "http://103.217.190.91:19987/app/bn",
+        "name": "半日闲",
+        "package": "com.yf.lelian",
+        "versionName": "3.5.8"
+      }
+    },
+    {
+      "key": "哔哩哔哩小品",
+      "name": "哔哩 • 小品",
+      "type": 3,
+      "api": "./plugins/catalog/bili.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "n": "哔哩小品"
+      }
+    },
+    {
+      "key": "哔哩合集",
+      "name": "哔哩 • 合集",
+      "type": 3,
+      "api": "./plugins/catalog/bili.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "n": "哔哩合集"
+      }
+    },
+    {
+      "key": "厂长影视",
+      "name": "厂长 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/czsapp.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": "https://cz01.vip"
+    },
+    {
+      "key": "独播影视",
+      "name": "独播 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/duboku.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "飞娱影视",
+      "name": "飞娱 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/feiyu.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "瓜子影视",
+      "name": "瓜子 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/gz360.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "韩圈",
+      "name": "韩圈 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/hxq.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": "http://www.小不点.com/api/2026/fishhxq.php"
+    },
+    {
+      "key": "华数",
+      "name": "华数 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/wasu.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "华谊",
+      "name": "华谊 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-drama.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "appName": "华谊",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "dataKey": "NDBYSZR1DMRRZ05NSUCWEJNIYWLBPT0=",
+        "decrypt": "1",
+        "host": "",
+        "pkg": "com.muyue.tool",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp9Ek4wIlQAtwFnuBRlsFiow2tr+4UOciGeNKbY7nL74etUqUb6fvpOSOHhFEfaWlfwUpOB17x3JEL3No19nfjCeVYrYPjlJcgoqUWH/tfIfFAQWvtxBIBlKazkhw8d3ChysWmeWRikKqkBsVRY4oqNPuj4sjm6Zult0U4I4prRQIDAQAB",
+        "site": "https://vip.123pan.cn/1851089669/oss/az5.txt",
+        "version": "1.0.0.4"
+      }
+    },
+    {
+      "key": "华谊影视",
+      "name": "华谊 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/app-drama.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "怀桑",
+      "name": "怀桑 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "kj37zs29q22jk96t",
+        "dataKey": "kj37zs29q22jk96t",
+        "init": "initV122",
+        "ua": "okhttp/3.10.0",
+        "url": "http://110.42.67.130:1226"
+      }
+    },
+    {
+      "key": "荐片",
+      "name": "荐片 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/jianpian.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "金牌影视",
+      "name": "金牌 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/jpys.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": "https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn"
+    },
+    {
+      "key": "橘汁",
+      "name": "橘汁 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-drama.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "appName": "橘汁",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "dataKey": "OW1WBLFZCLJ0WTNJCDMYEGXWYVP3PT0=",
+        "decrypt": "1",
+        "host": "",
+        "pkg": "com.mxj.wylcjbxyx",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
+        "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
+        "version": "3.0.2.3"
+      }
+    },
+    {
+      "key": "剧圈99",
+      "name": "剧圈 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app99.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "buildNumber": "2002",
+        "buildSignature": "054FA8DDA4319C6B6A9B954CA5777541C993F00B1B0BD4394F7EDE48184C4594",
+        "host": "http://124.221.3.182:19987/app/bn",
+        "name": "剧圈圈",
+        "package": "com.qingtangxiaozhuan.xyz",
+        "versionName": "1.2.0"
+      }
+    },
+    {
+      "key": "蓝鸟",
+      "name": "蓝鸟 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "oW5UxZ5kWVr1DI69",
+        "dataKey": "oW5UxZ5kWVr1DI69",
+        "init": "initV122",
+        "site": "https://lanyingjisu.oss-cn-wuhan-lr.aliyuncs.com/lyjszx.txt",
+        "ua": "okhttp/3.10.0"
+      }
+    },
+    {
+      "key": "蓝鹰",
+      "name": "蓝鹰 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "hagYExMdMkeWfemK",
+        "dataKey": "hagYExMdMkeWfemK",
+        "init": "initV122",
+        "ua": "okhttp/3.10.0",
+        "url": "http://103.217.190.91:5566"
+      }
+    },
+    {
+      "key": "量子资源",
+      "name": "量子 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/cms-json.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "api": "https://cj.lziapi.com/api.php/provide/vod/"
+      }
+    },
+    {
+      "key": "猎手影视",
+      "name": "猎手 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/hunter-video.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "马猴影视",
+      "name": "马猴 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/mahou-video.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "魔方",
+      "name": "魔方 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "1234567887654321",
+        "dataKey": "1234567887654321",
+        "url": "https://www.douy32mf.top"
+      }
+    },
+    {
+      "key": "茉莉",
+      "name": "茉莉 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "88689667dce61725",
+        "dataKey": "88689667dce61725",
+        "site": "https://allinadmin.oss-cn-hangzhou.aliyuncs.com/bk/9.txt"
+      }
+    },
+    {
+      "key": "苹果",
+      "name": "苹果 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-drama.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "appName": "小苹果",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "dataKey": "S0VNDTJHOFHHCNMRAW5IV2TOS2PBPQ==",
+        "decrypt": "0",
+        "host": "",
+        "pkg": "com.juechufsh.android.xpg1",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
+        "site": "https://xpgandroid03-1372779881.cos.ap-beijing.myqcloud.com/app_xpg_android.txt",
+        "version": "1.0.0.3"
+      }
+    },
+    {
+      "key": "奇奇",
+      "name": "奇奇 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "FTgP4Gq8zPiqbt7M",
+        "dataKey": "FTgP4Gq8zPiqbt7M",
+        "init": "initV122",
+        "search": "searchList8",
+        "site": "https://yun-1316442804.cos.ap-guangzhou.myqcloud.com/603.txt",
+        "ua": "okhttp/3.10.0"
+      }
+    },
+    {
+      "key": "热播影视",
+      "name": "热播 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-rj.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "url": "http://v.rbotv.cn"
+      }
+    },
+    {
+      "key": "世界",
+      "name": "世界 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "O3K6rYx75Q4xtiIE",
+        "dataKey": "O3K6rYx75Q4xtiIE",
+        "url": "https://appcms.4ksj.app"
+      }
+    },
+    {
+      "key": "天堂",
+      "name": "天堂 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-drama.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "appName": "电影天堂",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "dataKey": "D2KREWRIBVNAUJJYEDL4VFHOY2Q0PQ==",
+        "decrypt": "0",
+        "host": "",
+        "pkg": "com.dytiantang.one",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
+        "site": "https://dyttandroid04-1372779881.cos.ap-shanghai.myqcloud.com/app_dyttandroid.txt",
+        "version": "3.0.0.7"
+      }
+    },
+    {
+      "key": "王子",
+      "name": "王子 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "5a9w6x58dsq6z3a6",
+        "dataKey": "5a9w6x58dsq6z3a6",
+        "url": "https://app.95112475.xyz"
+      }
+    },
+    {
+      "key": "小镇影视",
+      "name": "小镇 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "preset": "town"
+      }
+    },
+    {
+      "key": "一起影视",
+      "name": "一起 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/app-yqk.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "永乐影视",
+      "name": "永乐 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/module-html.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "preset": "yongle"
+      }
+    },
+    {
+      "key": "预告",
+      "name": "新片 • 预告",
+      "type": 3,
+      "api": "./plugins/catalog/ygp.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-aigua-video",
+      "name": "爱瓜TV",
+      "type": 3,
+      "api": "./plugins/catalog/aigua-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-apple-video",
+      "name": "Apple影视",
+      "type": 3,
+      "api": "./plugins/catalog/apple-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-bubu-video",
+      "name": "布布追剧",
+      "type": 3,
+      "api": "./plugins/catalog/bubu-video.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-cms-collection",
+      "name": "采集全集",
+      "type": 3,
+      "api": "./plugins/catalog/cms-collection.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "configUrl": "https://raw.githubusercontent.com/cluntop/tvbox/ddffe6fdee088edd22185c05b8594210fcbcdca3/lib/cj.json",
+        "primary": 1,
+        "searchSites": 4
+      }
+    },
+    {
+      "key": "cluntop-cocoa-video",
+      "name": "可可影视",
+      "type": 3,
+      "api": "./plugins/catalog/cocoa-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-ddmf-video",
+      "name": "蛋蛋魔法影视",
+      "type": 3,
+      "api": "./plugins/catalog/module-html.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "preset": "ddmf"
+      }
+    },
+    {
+      "key": "cluntop-duoduo-web-player",
+      "name": "多多影视",
+      "type": 3,
+      "api": "./plugins/catalog/web-player.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "preset": "duoduo"
+      }
+    },
+    {
+      "key": "cluntop-fantuan-video",
+      "name": "饭团影视",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "preset": "fantuan"
+      }
+    },
+    {
+      "key": "cluntop-feikuai-video",
+      "name": "飞快影视",
+      "type": 3,
+      "api": "./plugins/catalog/module-html.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "preset": "feikuai"
+      }
+    },
+    {
+      "key": "cluntop-gold-mw",
+      "name": "金牌影院",
+      "type": 3,
+      "api": "./plugins/catalog/app-mw.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "sites": [
+          "https://www.sdzhgt.com",
+          "https://m.sdzhgt.com"
+        ]
+      }
+    },
+    {
+      "key": "cluntop-guazi-video",
+      "name": "瓜子影视",
+      "type": 3,
+      "api": "./plugins/catalog/gz360.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "sites": [
+          "https://apinew.uozvr.com",
+          "https://api.w32z7vtd.com",
+          "https://api.6a7nnf7.com",
+          "https://api.umygrx3.com",
+          "https://api.rmedphk.com"
+        ]
+      }
+    },
+    {
+      "key": "cluntop-hanju-video",
+      "name": "新韩剧网",
+      "type": 3,
+      "api": "./plugins/catalog/hanju-video.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-heaven-video",
+      "name": "影视天堂",
+      "type": 3,
+      "api": "./plugins/catalog/heaven-video.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-huavod-video",
+      "name": "华人视频",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "preset": "huavod"
+      }
+    },
+    {
+      "key": "cluntop-ifuntv-video",
+      "name": "欧乐影视",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "preset": "ifuntv"
+      }
+    },
+    {
+      "key": "cluntop-jieyingshi",
+      "name": "界影视",
+      "type": 3,
+      "api": "./plugins/catalog/jpys.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": "https://www.hkybqufgh.com"
+    },
+    {
+      "key": "cluntop-kangaroo-video",
+      "name": "袋鼠影视",
+      "type": 3,
+      "api": "./plugins/catalog/kangaroo-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-ptt-video",
+      "name": "PTT",
+      "type": 3,
+      "api": "./plugins/catalog/ptt-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-qiyou-video",
+      "name": "奇优影视",
+      "type": 3,
+      "api": "./plugins/catalog/qiyou-video.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-snowfall-video",
+      "name": "雪落影视",
+      "type": 3,
+      "api": "./plugins/catalog/snowfall-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-sunshine-video",
+      "name": "阳光影视",
+      "type": 3,
+      "api": "./plugins/catalog/sunshine-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-wencai-mw",
+      "name": "文才影视",
+      "type": 3,
+      "api": "./plugins/catalog/app-mw.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "sites": [
+          "https://www.jiabaide.cn",
+          "https://www.sizhengxt.com",
+          "https://0996zp.com",
+          "https://9zhoukj.com",
+          "https://www.tjrongze.com",
+          "https://cqzuoer.com"
+        ]
+      }
+    },
+    {
+      "key": "cluntop-xigua-video",
+      "name": "西瓜影视",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "preset": "xigua"
+      }
+    },
+    {
+      "key": "cluntop-youtube-video",
+      "name": "YouTube",
+      "type": 3,
+      "api": "./plugins/catalog/youtube-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "didahd",
+      "name": "嘀嗒影视",
+      "type": 3,
+      "api": "./plugins/catalog/didahd.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "fyyy",
+      "name": "飞宇影院",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 1,
+      "ext": {
+        "preset": "fyyy"
+      }
+    },
+    {
+      "key": "olelive",
+      "name": "欧乐影院 • 外",
+      "type": 3,
+      "api": "./plugins/catalog/olelive.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "tvb云播",
+      "name": "TVB • 云播",
+      "type": 3,
+      "api": "./plugins/catalog/tvb-cloud.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": "http://app.tuxianimg.com"
+    },
+    {
+      "key": "xptv-jpyy",
+      "name": "金牌 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/jpys.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "xptv-ppnix",
+      "name": "PPnix • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/ppnix-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    }
+  ]
+}

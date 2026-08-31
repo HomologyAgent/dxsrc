@@ -1,0 +1,225 @@
+{
+  "name": "DXPlay · 动漫",
+  "sites": [
+    {
+      "key": "哔哩视频",
+      "name": "哔哩 • 影视",
+      "type": 3,
+      "api": "./plugins/catalog/biliys.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "番社动漫",
+      "name": "番社 • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/dora-video.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "方舟动漫",
+      "name": "方舟 • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "e72cdfd629e8895d",
+        "dataKey": "e72cdfd629e8895d",
+        "url": "https://www.cyfz.top"
+      }
+    },
+    {
+      "key": "咕咕动漫",
+      "name": "咕咕 • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "nKfZ8KX6JTNWRzTD",
+        "dataKey": "nKfZ8KX6JTNWRzTD",
+        "url": "https://www.gugu3.com"
+      }
+    },
+    {
+      "key": "曼波动漫",
+      "name": "曼波 • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "dataIv": "66dc309cbeeca454",
+        "dataKey": "66dc309cbeeca454",
+        "url": "https://app.omofun1.top"
+      }
+    },
+    {
+      "key": "漫国动漫",
+      "name": "漫国 • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/app-sy.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "listKey": "aassddwwxxllsx1x",
+        "parsesKey": "aassddwwxxllsx1x",
+        "siteKey": "rectangleadsadxa",
+        "url": "http://114.66.27.208:806"
+      }
+    },
+    {
+      "key": "喵呜动漫",
+      "name": "喵呜 • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/miaowu-anime.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "魔都动漫",
+      "name": "魔都 • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/cms-json.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "api": "https://www.mdzyapi.com/api.php/provide/vod",
+        "categories": [
+          [
+            "1",
+            "国产动漫"
+          ],
+          [
+            "2",
+            "日韩动漫"
+          ],
+          [
+            "3",
+            "欧美动漫"
+          ],
+          [
+            "4",
+            "港台动漫"
+          ],
+          [
+            "5",
+            "动漫电影"
+          ]
+        ]
+      }
+    },
+    {
+      "key": "双星99",
+      "name": "双星 • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/app99.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "LoginPath": "/app/log",
+        "buildNumber": "2001",
+        "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC",
+        "host": "http://111.180.139.119:19987/app/bn",
+        "name": "双子星动漫",
+        "package": "com.haiwang.liangxia.my.ym",
+        "versionName": "6.4.9"
+      }
+    },
+    {
+      "key": "cluntop-dmmiku",
+      "name": "动漫MIKU",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "baseUrl": "https://www.dmmiku.com",
+        "preset": "dmmiku"
+      }
+    },
+    {
+      "key": "cluntop-mifun",
+      "name": "MiFun动漫",
+      "type": 3,
+      "api": "./plugins/catalog/app-get.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "dataIv": "GETMIFUNGEIMIFUN",
+        "dataKey": "GETMIFUNGEIMIFUN",
+        "deviceId": "4ff30d65365d493aa76ee9171dd34ac4",
+        "signedHeaders": true,
+        "site": "https://miget-1313189639.cos.ap-guangzhou.myqcloud.com/mifun.txt",
+        "version": "516"
+      }
+    },
+    {
+      "key": "cluntop-qiyou-anime",
+      "name": "奇优动漫",
+      "type": 3,
+      "api": "./plugins/catalog/qiyou-video.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "baseUrl": "http://qiyoudy5.com"
+      }
+    },
+    {
+      "key": "cluntop-tomato-anime",
+      "name": "番茄动漫",
+      "type": 3,
+      "api": "./plugins/catalog/tomato-anime.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "xptv-age",
+      "name": "AGE • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/age-anime.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "xptv-anime1",
+      "name": "Anime1 • 动漫",
+      "type": 3,
+      "api": "./plugins/catalog/anime1.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    }
+  ]
+}

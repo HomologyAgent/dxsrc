@@ -1,0 +1,201 @@
+{
+  "name": "DXPlay · 音乐音频",
+  "sites": [
+    {
+      "key": "哔哩哔哩听书",
+      "name": "哔哩 • 听书",
+      "type": 3,
+      "api": "./plugins/catalog/bili.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "n": "哔哩听书"
+      }
+    },
+    {
+      "key": "哔哩哔哩戏曲",
+      "name": "哔哩 • 戏曲",
+      "type": 3,
+      "api": "./plugins/catalog/bili.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "n": "哔哩戏曲"
+      }
+    },
+    {
+      "key": "哔哩哔哩相声",
+      "name": "哔哩 • 相声",
+      "type": 3,
+      "api": "./plugins/catalog/bili.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "n": "哔哩相声"
+      }
+    },
+    {
+      "key": "哔哩哔哩音乐",
+      "name": "哔哩 • 音乐",
+      "type": 3,
+      "api": "./plugins/catalog/bili.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "n": "哔哩音乐"
+      }
+    },
+    {
+      "key": "博看听书",
+      "name": "博看 • 听书",
+      "type": 3,
+      "api": "./plugins/catalog/ting-bokan.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "堇夏听书",
+      "name": "堇夏 • 听书",
+      "type": 3,
+      "api": "./plugins/catalog/ting-jinxia.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "酷我音乐",
+      "name": "酷我 • 音乐",
+      "type": 3,
+      "api": "./plugins/catalog/kuwo-music.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "轮回dj",
+      "name": "轮回 • DJ",
+      "type": 3,
+      "api": "./plugins/catalog/djlh.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "汽水音乐",
+      "name": "汽水 • 音乐",
+      "type": 3,
+      "api": "./plugins/catalog/qishui-music.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "蜻蜓fm",
+      "name": "蜻蜓 • FM",
+      "type": 3,
+      "api": "./plugins/catalog/qingting-fm.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "世界听书",
+      "name": "世界 • 听书",
+      "type": 3,
+      "api": "./plugins/catalog/ting-shijie.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "戏曲多多",
+      "name": "戏曲 • 多多",
+      "type": 3,
+      "api": "./plugins/catalog/app-ly.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "呦呦dj",
+      "name": "呦呦 • DJ",
+      "type": 3,
+      "api": "./plugins/catalog/djuu.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-faloo-audio",
+      "name": "听书达人",
+      "type": 3,
+      "api": "./plugins/catalog/faloo-audio.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-gd-music",
+      "name": "捡的音乐",
+      "type": 3,
+      "api": "./plugins/catalog/gd-music.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "configUrl": "https://raw.githubusercontent.com/cluntop/tvbox/ddffe6fdee088edd22185c05b8594210fcbcdca3/lib/jdyy.json",
+        "source": "netease"
+      }
+    },
+    {
+      "key": "cluntop-kugou-rank",
+      "name": "酷狗榜单",
+      "type": 3,
+      "api": "./plugins/catalog/kugou-rank.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-yinyuetai",
+      "name": "音悦台",
+      "type": 3,
+      "api": "./plugins/catalog/yinyuetai.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-yymp3",
+      "name": "YYMP3",
+      "type": 3,
+      "api": "./plugins/catalog/yymp3.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    }
+  ]
+}

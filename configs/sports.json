@@ -1,0 +1,35 @@
+{
+  "name": "DXPlay · 体育",
+  "sites": [
+    {
+      "key": "88看球",
+      "name": "88 • 看球",
+      "type": 3,
+      "api": "./plugins/catalog/sports-88.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "瓜子体育",
+      "name": "瓜子 • 体育",
+      "type": 3,
+      "api": "./plugins/catalog/sports-guazi.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "咖啡体育",
+      "name": "咖啡 • 体育",
+      "type": 3,
+      "api": "./plugins/catalog/sports-kafei.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    }
+  ]
+}

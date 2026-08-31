@@ -1,0 +1,97 @@
+{
+  "name": "DXPlay · 成人内容",
+  "sites": [
+    {
+      "key": "cluntop-ninety-one-video",
+      "name": "91影视",
+      "type": 3,
+      "api": "./plugins/catalog/ninety-one-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-owo-video",
+      "name": "owoav",
+      "type": 3,
+      "api": "./plugins/catalog/owo-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-roliz-video",
+      "name": "乱伦仓库",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "preset": "roliz"
+      }
+    },
+    {
+      "key": "cluntop-shaofu-video",
+      "name": "少妇喝了",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "preset": "shaofu"
+      }
+    },
+    {
+      "key": "cluntop-xigua51-video",
+      "name": "51吸瓜",
+      "type": 3,
+      "api": "./plugins/catalog/xigua51-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-xx01-video",
+      "name": "猎奇影视",
+      "type": 3,
+      "api": "./plugins/catalog/xx01-video.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "cluntop-yese-video",
+      "name": "夜色",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "preset": "yese"
+      }
+    },
+    {
+      "key": "cluntop-youav-video",
+      "name": "Youavhub",
+      "type": 3,
+      "api": "./plugins/catalog/mac-html.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": {
+        "preset": "youav"
+      }
+    }
+  ]
+}

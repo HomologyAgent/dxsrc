@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "summary": {
+    "verified": 172,
+    "uniquePlugins": 98
+  },
+  "unavailableXptv": [
+    {
+      "id": "novipnoad",
+      "reason": "cloudflare-challenge"
+    },
+    {
+      "id": "iyftv",
+      "reason": "cloudflare-challenge"
+    },
+    {
+      "id": "yiys",
+      "reason": "expired-certificate-and-source-specific-rsa"
+    },
+    {
+      "id": "xzys",
+      "reason": "redirects-to-unrelated-site"
+    },
+    {
+      "id": "seedhub",
+      "reason": "detail-cloudflare-challenge"
+    },
+    {
+      "id": "yunpan-resource",
+      "reason": "empty-upstream-response"
+    }
+  ]
+}
