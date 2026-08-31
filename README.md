@@ -11,7 +11,7 @@ https://raw.githubusercontent.com/HomologyAgent/dxsrc/master/dxplay.json
 ```
 
 Smaller presets are available under [`configs/`](configs/). The interactive
-selector at <https://homologyagent.github.io/> can generate a custom
+selector at <https://homologyagent.github.io/dxsrc/> can generate a custom
 configuration by content category and delivery type.
 
 ## Contents
