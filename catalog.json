@@ -918,6 +918,7 @@
         "implementation": "native"
       },
       "health": "partial",
+      "publishPartial": true,
       "origins": [
         {
           "collection": "jsm",

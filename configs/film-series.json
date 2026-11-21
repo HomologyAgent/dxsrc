@@ -107,6 +107,16 @@
       "changeable": 0
     },
     {
+      "key": "韩圈",
+      "name": "韩圈 • APP",
+      "type": 3,
+      "api": "./plugins/catalog/hxq.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
       "key": "华数",
       "name": "华数 • 影视",
       "type": 3,
