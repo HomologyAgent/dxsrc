@@ -905,12 +905,11 @@
       "plugin": "plugins/catalog/hxq.js",
       "type": 3,
       "capabilities": {
-        "searchable": true,
+        "searchable": false,
         "quickSearch": false,
         "filterable": true,
         "changeable": false
       },
-      "extension": "http://www.小不点.com/api/2026/fishhxq.php",
       "classification": {
         "content": [
           "film-series"
@@ -918,7 +917,7 @@
         "delivery": "direct",
         "implementation": "native"
       },
-      "health": "verified",
+      "health": "partial",
       "origins": [
         {
           "collection": "jsm",
